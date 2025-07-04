@@ -1,5 +1,9 @@
 if (!Function.prototype.myCall2) {
   Function.prototype.myCall2 = function (context, ...args) {
+    if (typeof this !== 'function') {
+      throw new TypeError(this + ' is not callable')
+    }
+
     context = context ?? globalThis
 
     context = Object(context)
@@ -16,7 +20,7 @@ if (!Function.prototype.myCall2) {
   }
 }
 
-const greet = (greeting, punctuation) => {
+function greet(greeting, punctuation) {
   return `${greeting}, ${this.name}${punctuation}`
 }
 
