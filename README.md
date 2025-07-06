@@ -95,7 +95,7 @@ Whether you're preparing for a **frontend machine coding round**, a **system des
 - Polyfill for `Math.floor`
 - Polyfill for `Math.ceil`
 
-### 👻 Misc
+### 👻 Miscs
 
 - Polyfill for `setTimeout` and `setInterval` (custom implementation)
 - Polyfill for `Symbol`
